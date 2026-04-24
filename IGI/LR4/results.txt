@@ -1,0 +1,12 @@
+Общее количество предложений в тексте: 10
+Повествовательных: 5
+Побудительных: 3
+Вопросиьельных: 2
+Средняя длина предложений: 422.0
+Средняя длина слов: 4.795454545454546
+Среднее количество смайликов в тексте: 5
+Слова только из букв в нижнем рег и цифр: ['world', 'is', 'a', 'sample', 'text', 'for', 'analysis', 'are', 'you', 'today', 'write', 'your', 'answer', 'below', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog', 'you', 'like', 'programming', 'love', 'it', 'are', 'some', 'smilies', 'some', 'words', 'with', 'digits', 'abc123', 'test99', 'x5y', 'passw0rd', 'address', '192', '168', '0', '1', 'is', 'valid', 'but', '300', '400', '500', '600', 'is', 'not', 'valid', '10', '0', '0', '1', 'words', 'ending', 'with', 'w', 'cow', 'bow', 'window', 'w', 'shortest', 'word', 'ending', 'with', 'w', 'is', 'w', 'itself', 's', 'all', 'folks']
+Ip адреса: ['192.168.0.1', '300.400.500.6', '10.0.0.1']
+Число слов, доина которых меньще 6 символов: 76
+Самое короткое слово заканчивающееся на w: How 
+Отсортированные слова в порядке роста их длин: ['a', 'I', '0', '1', '0', '0', '1', 'w', 'w', 'w', 'w', 's', 'is', 'Do', 'it', 'IP', 'is', 'is', 'IP', '10', 'is', 'for', 'How', 'are', 'you', 'The', 'fox', 'the', 'dog', 'you', 'Yes', 'are', 'x5y', 'The', '192', '168', 'but', '300', '400', '500', '600', 'not', 'cow', 'bow', 'The', 'all', 'This', 'text', 'your', 'over', 'lazy', 'like', 'love', 'Here', 'some', 'Also', 'some', 'with', 'Find', 'with', 'word', 'with', 'That', 'Hello', 'world', 'today', 'write', 'below', 'quick', 'brown', 'jumps', 'words', 'valid', 'valid', 'words', 'folks', 'sample', 'Please', 'answer', 'digits', 'abc123', 'test99', 'ending', 'window', 'ending', 'itself', 'smilies', 'address', 'Another', 'analysis', 'passw0rd', 'shortest', 'programming']

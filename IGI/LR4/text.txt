@@ -1,0 +1,6 @@
+Hello world! This is a sample text for analysis. How are you today? Please, write your answer below.
+The quick brown fox jumps over the lazy dog. Do you like programming? Yes, I love it!
+Here are some smilies: :-) ;-) ;---] :[[[ ;----------))). Also some words with digits: abc123, test99, x5y, passw0rd.
+The IP address 192.168.0.1 is valid, but 300.400.500.600 is not. Another valid IP: 10.0.0.1.
+Find words ending with w: cow, bow, window, w. The shortest word ending with w is 'w' itself.
+That's all folks! 
