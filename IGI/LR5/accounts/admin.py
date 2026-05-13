@@ -1,7 +1,9 @@
 from django.contrib import admin
 
 from .models import (
-    ClientProfile
+    ClientProfile,
+    Organization,
+    DriverProfile
 )
 
 
@@ -18,3 +20,6 @@ class ClientProfileAdmin(admin.ModelAdmin):
         'user__username',
         'phone'
     )
+
+admin.site.register(Organization)
+admin.site.register(DriverProfile)
