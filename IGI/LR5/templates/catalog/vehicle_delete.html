@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Удаление</h2>
+
+<p>
+    Удалить транспорт:
+    {{ vehicle }}
+</p>
+
+<form method="post">
+
+    {% csrf_token %}
+
+    <button type="submit">
+        Удалить
+    </button>
+
+</form>
+
+{% endblock %}

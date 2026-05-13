@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>О компании</h2>
+
+{% if company %}
+
+    <p>
+        {{ company.title }}
+    </p>
+
+    <p>
+        {{ company.description }}
+    </p>
+
+    <p>
+        Основана:
+        {{ company.founded_year }}
+    </p>
+
+{% endif %}
+
+{% endblock %}

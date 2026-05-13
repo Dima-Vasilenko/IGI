@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Контакты</h2>
+
+{% for item in contacts %}
+
+    <hr>
+
+    <p>
+        {{ item.full_name }}
+    </p>
+
+    <p>
+        {{ item.position }}
+    </p>
+
+    <p>
+        {{ item.phone }}
+    </p>
+
+    <p>
+        {{ item.email }}
+    </p>
+
+    <p>
+        {{ item.responsibilities }}
+    </p>
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Главная страница</h2>
+
+{% if latest_news %}
+    <h3>{{ latest_news.title }}</h3>
+    <p>{{ latest_news.short_description }}</p>
+{% else %}
+    <p>Новостей пока нет</p>
+{% endif %}
+
+{% endblock %}

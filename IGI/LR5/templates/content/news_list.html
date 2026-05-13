@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Новости</h2>
+
+{% for item in news %}
+    <hr>
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.short_description }}</p>
+{% endfor %}
+
+{% endblock %}

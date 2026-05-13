@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Грузоперевозки{% endblock %}</title>
+</head>
+<body>
+
+<h1>Система грузоперевозок</h1>
+
+<hr>
+
+{% if user.is_authenticated %}
+
+    Вы вошли как {{ user.username }}
+
+    |
+    <a href="/profile/">Профиль</a>
+
+    |
+    <a href="/logout/">Выйти</a>
+
+{% else %}
+
+    <a href="/login/">Войти</a>
+
+    |
+    <a href="/register/">Регистрация</a>
+
+{% endif %}
+
+<hr>
+
+<hr>
+
+<a href="/">Главная</a> |
+<a href="/news/">Новости</a> |
+<a href="/faq/">FAQ</a> |
+<a href="/vacancies/">Вакансии</a> |
+<a href="/reviews/">Отзывы</a> |
+<a href="/vehicles/">Транспорт</a> |
+<a href="/orders/">Заказы</a>
+<a href="/statistics/">Статистика</a>
+<a href="/random-driver/">API Driver</a>
+<a href="/currency/">Курсы валют</a>
+
+<hr>
+
+
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

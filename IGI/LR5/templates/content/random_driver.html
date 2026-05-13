@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Случайный водитель</h2>
+
+<p>
+    Имя:
+    {{ user.name.first }}
+    {{ user.name.last }}
+</p>
+
+<p>
+    Телефон:
+    {{ user.phone }}
+</p>
+
+<img src="{{ user.picture.medium }}">
+
+{% endblock %}

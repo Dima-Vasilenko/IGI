@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Статистика</h2>
+
+<p>
+    Количество заказов:
+    {{ total_orders }}
+</p>
+
+<p>
+    Средняя стоимость:
+    {{ avg_price }}
+</p>
+
+<p>
+    Максимальная стоимость:
+    {{ max_price }}
+</p>
+
+<p>
+    Медианная стоимость:
+    {{ median_price }}
+</p>
+
+{% if popular_cargo %}
+
+<p>
+    Популярный тип груза:
+    {{ popular_cargo.cargo_type__name }}
+</p>
+
+{% endif %}
+
+<hr>
+
+<h3>Время</h3>
+
+<p>
+    Локальное время:
+    {{ local_time|date:"d/m/Y H:i" }}
+</p>
+
+<p>
+    UTC:
+    {{ utc_time|date:"d/m/Y H:i" }}
+</p>
+
+<hr>
+
+<h3>Календарь</h3>
+
+<pre>
+{{ current_calendar }}
+</pre>
+
+<hr>
+
+<h3>График заказов</h3>
+
+<img src="/media/charts/orders_chart.png">
+
+{% endblock %}

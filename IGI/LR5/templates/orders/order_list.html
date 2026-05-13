@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Заказы</h2>
+
+{% if user.is_authenticated %}
+
+<a href="/orders/create/">
+    Создать заказ
+</a>
+
+{% endif %}
+
+<hr>
+
+{% for item in orders %}
+
+    <hr>
+
+    <p>
+        Заказ #{{ item.id }}
+    </p>
+
+    <p>
+        Клиент:
+        {{ item.client }}
+    </p>
+
+    <p>
+        Стоимость:
+        {{ item.price }}
+    </p>
+
+    <p>
+        Статус:
+        {{ item.status }}
+    </p>
+
+    <a href="/orders/{{ item.id }}/update/">
+        Редактировать
+    </a>
+
+    |
+
+    <a href="/orders/{{ item.id }}/delete/">
+        Удалить
+    </a>
+
+{% endfor %}
+
+{% endblock %}

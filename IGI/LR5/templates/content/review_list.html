@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Отзывы</h2>
+
+{% if user.is_authenticated %}
+    <a href="/reviews/add/">Добавить отзыв</a>
+{% else %}
+    <p>
+        Чтобы оставить отзыв —
+        войдите в аккаунт
+    </p>
+{% endif %}
+
+{% for item in reviews %}
+    <hr>
+    <p>{{ item.user }}</p>
+    <p>Оценка: {{ item.rating }}</p>
+    <p>{{ item.text }}</p>
+{% endfor %}
+
+{% endblock %}
