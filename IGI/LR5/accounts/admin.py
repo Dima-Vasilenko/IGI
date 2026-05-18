@@ -12,7 +12,7 @@ class ClientProfileAdmin(admin.ModelAdmin):
 
     list_display = (
         'user',
-        'age',
+        'birth_date',
         'phone'
     )
 

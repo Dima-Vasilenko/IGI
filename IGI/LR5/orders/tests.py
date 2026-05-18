@@ -25,7 +25,7 @@ class OrderModelTest(TestCase):
 
         client = ClientProfile.objects.create(
             user=user,
-            age=20,
+            birth_date='2000-10-10',
             phone='+375 (29) 123-45-67'
         )
 

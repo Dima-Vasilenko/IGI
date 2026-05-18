@@ -16,7 +16,7 @@ class ClientProfileTest(TestCase):
         profile = ClientProfile.objects.create(
             user=user,
             phone='+375(29)111-11-11',
-            age=25
+            birth_date='2000-10-10'
         )
 
         self.assertEqual(
@@ -25,6 +25,6 @@ class ClientProfileTest(TestCase):
         )
 
         self.assertEqual(
-            profile.age,
-            25
+            profile.birth_date,
+            '2000-10-10'
         )
