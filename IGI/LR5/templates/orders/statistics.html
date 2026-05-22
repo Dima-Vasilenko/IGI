@@ -4,6 +4,9 @@
 
 <h2>Статистика</h2>
 
+{% if user.is_superuser %}
+
+
 <p>
     Количество заказов:
     {{ total_orders }}
@@ -60,5 +63,7 @@
 <h3>График заказов</h3>
 
 <img src="/media/charts/orders_chart.png">
+
+{% endif %}
 
 {% endblock %}

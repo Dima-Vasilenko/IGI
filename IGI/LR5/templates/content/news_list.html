@@ -7,7 +7,8 @@
 {% for item in news %}
     <hr>
     <h3>{{ item.title }}</h3>
-    <p>{{ item.short_description }}</p>
+    <p>{{ item.short_description }}</p>\
+    <img src="{{ item.image.url }}" width="250" height="250">
 {% endfor %}
 
 {% endblock %}

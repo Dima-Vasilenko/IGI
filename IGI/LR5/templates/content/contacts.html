@@ -4,7 +4,7 @@
 
 <h2>Контакты</h2>
 
-{% for item in contacts %}
+{% for item in employees %}
 
     <hr>
 
@@ -27,6 +27,8 @@
     <p>
         {{ item.responsibilities }}
     </p>
+
+    <img src="{{ item.photo.url }}" width="250" height="250">
 
 {% endfor %}
 
