@@ -183,10 +183,14 @@ def statistics_view(request):
 
     current_timezone = timezone.get_current_timezone()
 
-    server_timezone_name = time.tzname[0]
-    server_tz = pytz.timezone(server_timezone_name)
+    # server_timezone_name = time.tzname[0]
+    # server_tz = pytz.timezone(server_timezone_name)
 
-    local_time = datetime.datetime.now(server_tz)
+    # local_time = datetime.datetime.now(server_tz)
+
+
+    local_time = datetime.datetime.now()
+    server_timezone = time.tzname[0]
 
 
 
@@ -250,6 +254,8 @@ def statistics_view(request):
         'popular_cargo': popular_cargo,
 
         'local_time': local_time,
+
+        'server_timezone': server_timezone,
 
         'utc_time': utc_time,
 
