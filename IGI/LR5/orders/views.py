@@ -188,8 +188,8 @@ def statistics_view(request):
 
     # local_time = datetime.datetime.now(server_tz)
 
-
-    local_time = datetime.datetime.now()
+    local_time = datetime.datetime.now().astimezone()
+    # local_time = datetime.datetime.now()
     server_timezone = time.tzname[0]
 
 
