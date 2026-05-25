@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 import os
 import time
 import pytz
-
+from tzlocal import get_localezone
 
 
 @login_required
@@ -180,16 +180,10 @@ def statistics_view(request):
         .first()
     )
 
+    
+    tz = get_localezone()
 
-    current_timezone = timezone.get_current_timezone()
-
-    # server_timezone_name = time.tzname[0]
-    # server_tz = pytz.timezone(server_timezone_name)
-
-    # local_time = datetime.datetime.now(server_tz)
-
-    local_time = datetime.datetime.now().astimezone()
-    # local_time = datetime.datetime.now()
+    local_time = datetime.datetime.now(tz)
     server_timezone = time.tzname[0]
 
 
