@@ -32,6 +32,8 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 import os
+import time
+
 
 
 @login_required
@@ -179,7 +181,9 @@ def statistics_view(request):
 
 
     current_timezone = timezone.get_current_timezone()
-    local_time = datetime.datetime.now(current_timezone)
+
+    server_timezone_name = time.tzname[0]
+    local_time = datetime.datetime.now(server_timezone_name)
 
 
     utc_time = datetime.datetime.now(
