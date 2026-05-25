@@ -177,7 +177,10 @@ def statistics_view(request):
         .first()
     )
 
-    local_time = timezone.now()
+
+    current_timezone = timezone.get_current_timezone()
+    local_time = datetime.datetime.now(current_timezone)
+
 
     utc_time = datetime.datetime.now(
         datetime.timezone.utc
