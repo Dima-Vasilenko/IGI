@@ -33,6 +33,7 @@ import matplotlib.pyplot as plt
 
 import os
 import time
+import pytz
 
 
 
@@ -183,7 +184,10 @@ def statistics_view(request):
     current_timezone = timezone.get_current_timezone()
 
     server_timezone_name = time.tzname[0]
-    local_time = datetime.datetime.now(server_timezone_name)
+    server_tz = pytz.timezone(server_timezone_name)
+
+    local_time = datetime.datetime.now(server_tz)
+
 
 
     utc_time = datetime.datetime.now(
