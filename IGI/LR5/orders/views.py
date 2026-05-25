@@ -6,6 +6,7 @@ from django.shortcuts import (
 
 from django.contrib.auth.decorators import login_required
 
+from django.utils import timezone
 from django.db.models import Avg, Max, Count
 
 from statistics import median
@@ -176,10 +177,10 @@ def statistics_view(request):
         .first()
     )
 
-    local_time = datetime.datetime.now()
+    local_time = timezone.now()
 
     utc_time = datetime.datetime.now(
-        ZoneInfo("UTC")
+        datetime.timezone.utc
     )
 
     current_calendar = calendar.month(

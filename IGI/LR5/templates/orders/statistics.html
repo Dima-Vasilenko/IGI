@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load tz %}
 {% block content %}
 
 <h2>Статистика</h2>
@@ -41,13 +41,13 @@
 <h3>Время</h3>
 
 <p>
-    Локальное время:
+    Локальая таймзона:
     {{ local_time|date:"d/m/Y H:i" }}
 </p>
 
 <p>
     UTC:
-    {{ utc_time|date:"d/m/Y H:i" }}
+    {{ utc_time|utc|date:"d/m/Y H:i" }}
 </p>
 
 <hr>

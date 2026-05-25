@@ -21,7 +21,7 @@ def vehicle_list(request):
     page_number = request.GET.get('page')
 
     page_obj = paginator.get_page(page_number)
-
+    
     search = request.GET.get('search')
 
     sort = request.GET.get('sort')
